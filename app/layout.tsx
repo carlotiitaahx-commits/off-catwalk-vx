@@ -16,11 +16,18 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Fashion Event Planner',
-    template: '%s — Fashion Event Planner',
+    default: 'OFF-CATWALK — Behind every great fashion event.',
+    template: '%s — OFF-CATWALK',
   },
+  applicationName: 'OFF-CATWALK',
   description:
-    'A luxury editorial event management platform for fashion PR agencies, brands and event professionals. Manage guests, tasks, budget and timeline in one place.',
+    'OFF-CATWALK — Behind every great fashion event. A luxury editorial event management platform for fashion PR agencies, brands and event professionals. Manage guests, tasks, budget and timeline in one place.',
+  openGraph: {
+    title: 'OFF-CATWALK',
+    description: 'Behind every great fashion event.',
+    siteName: 'OFF-CATWALK',
+    type: 'website',
+  },
   generator: 'v0.app',
   icons: {
     icon: [

@@ -30,12 +30,12 @@ const NAV_ITEMS = [
 
 function Brand() {
   return (
-    <Link href="/" className="group flex flex-col gap-1 outline-none">
-      <span className="text-[0.6rem] tracking-[0.32em] text-taupe uppercase">Atelier Edition</span>
-      <span className="font-serif text-[1.7rem] leading-[1.05] font-light text-white">
-        Fashion Event
-        <br />
-        <em className="italic">Planner</em>
+    <Link href="/" className="group flex flex-col gap-2 outline-none">
+      <span className="font-serif text-[1.85rem] leading-none font-light tracking-[0.06em] text-white">
+        OFF-CATWALK
+      </span>
+      <span className="font-serif text-sm leading-snug text-taupe italic">
+        Behind every great fashion event.
       </span>
     </Link>
   )
@@ -160,8 +160,12 @@ export function AppShell({ children }: { children: ReactNode }) {
       </aside>
 
       <header className="sticky top-0 z-40 flex items-center justify-between border-b border-sidebar-border bg-sidebar px-5 py-4 lg:hidden">
-        <Link href="/" className="font-serif text-xl font-light text-white">
-          Fashion Event <em className="italic">Planner</em>
+        <Link
+          href="/"
+          aria-label="OFF-CATWALK — Behind every great fashion event."
+          className="font-serif text-xl font-light tracking-[0.06em] text-white"
+        >
+          OFF-CATWALK
         </Link>
         <Button
           variant="ghost"
